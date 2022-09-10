@@ -1,0 +1,512 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+h1,h2,h3,h4,a,p,ul,ol,li{
+    font-family: 'Playfair Display', serif;
+
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  position: relative;
+  
+  opacity: 1;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+html,body{
+    width: 100%;
+}
+
+
+
+
+/*drfhyrthfgj*/
+
+header{
+    background-color: #F0DD9B;
+    box-shadow: 0 10px 6px rgb(145, 145, 145);
+    width: 100%;
+    padding: 0.5%;
+   
+
+    
+}
+#view-1{
+    width: 100%;
+
+}
+#main{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+    background-color: rgb(39, 39, 39);
+    padding:  4% 0 4% 0;
+    
+  
+    
+}
+
+.block{
+    
+    border-radius:15px;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.317);
+  
+    transition: all 0.5s;
+    
+ 
+}
+
+.block:hover{
+    box-shadow: 5px 5px 2px rgba(171, 171, 171, 0.313);
+
+  
+   
+
+}
+
+#photo-1{
+    
+    min-width: 23%;
+    max-width: 23%;
+    border-radius: 15px;
+
+}
+
+#bl1{
+    
+    max-width: 60%;
+ 
+    background-color: #b7a975;
+    
+    padding:3%;
+    border-bottom-right-radius:60%;
+    text-align: center ;
+    color:#e1e1e1;
+    
+    
+
+
+
+}
+#mntext{
+    font-size: calc(10px + 30 * (100vw / 1280));
+   
+    
+    color: rgb(10, 10, 10);
+    margin-top: 4%;
+    font-family: 'Playfair Display', serif;
+    
+    
+ 
+    
+}
+
+#sctext{
+    font-size:calc(10px + 40 * (100vw / 1280));
+    float:left;
+    margin-top:3%;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    
+    
+    
+    
+}
+#cons{
+    color: rgb(10, 10, 10)
+}
+
+.but{
+    margin-top: -2%;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.scrollup {
+    border-radius:25px ;
+    transition: all 0.2s;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 500;
+
+
+
+    color: rgb(10, 10, 10); /* цвет текста */
+    background-color:  #F0DD9B; /* цвет заднего фона */
+    text-decoration: none;
+    padding: 1% 3%; /* отступы до содержимого блока */
+    
+    cursor: pointer; /* форма курсора */
+     /* не отображать элемент */
+    text-align: center; /*выравнивание содержимого элемента по центру */
+  }
+.scrollup:hover {
+   background-color: #000; /* цвет заднего фона при наведении */
+   color: rgb(255, 255, 255);
+   border-radius:15px ;
+ }
+ .punkts_all{
+    min-height: 20vh;
+ }
+ 
+ .punkts{
+    background-color: #F0DD9B;
+    max-width: 70%;
+    margin-top: 2%;
+    padding: 2% 1% 2% 2%;
+    
+    float:right;
+    
+    
+    
+    color: rgb(29, 29, 29);
+    box-shadow: 50px 0px rgb(39, 39, 39);
+    transition: all 0.5s;
+    display: flex;
+    
+    border-top-left-radius: 25px ;
+    border-bottom-left-radius: 25px ;
+  
+    
+}
+.punkts h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+}
+    
+
+.punkts:hover{
+    transform: translateX(-50px);
+    
+}
+#punkts-2{
+    box-shadow: -50px 0px #F0DD9B;
+    margin-top: 4%;
+    background-color: rgb(39, 39, 39);
+    color: #BCBCBC;
+    padding: 2% 2% 2% 1%;
+    
+
+    float:left;
+    border-top-right-radius: 25px ;
+    border-bottom-right-radius: 25px ;
+    border-top-left-radius: 0 ;
+    border-bottom-left-radius: 0 ;
+
+}
+#punkts-2:hover{
+    transform: translateX(50px);
+    
+}
+
+
+
+#about_div{
+    width: 100%;
+    margin-top: 5%;
+    
+}
+#exact-punkts{
+    
+    padding:2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: left;
+    
+    background-color: rgb(39, 39, 39);
+    max-width: 60%;
+    margin-top: 2%;
+    border-top-right-radius: 25px ;
+    border-bottom-right-radius: 25px ;
+    
+    color: #BCBCBC;
+    box-shadow: -50px 0px #F0DD9B;
+    transition: all 0.5s;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75em;
+
+
+}
+
+
+
+
+#exact-punkts:hover{
+    transform: translateX(50px);
+}
+#exact-punkts li {
+    
+    display: inline-block; /* Отображать как строчный элемент */
+    margin-right: 2px; /* Отступ слева */
+     /* Поля вокруг текста */
+    width: 45%;
+    
+
+
+}
+#li2{
+    color:  #F0DD9B;
+    
+   
+
+
+
+
+}
+
+#exit{
+    background-color: #f0de9b89;
+    width: 100%;
+    height:5vh;
+    float:right;
+    margin-top: 10%;
+}
+#uslugi{
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    float:left;
+   
+    padding: 0 2% 2% 2%;
+    
+}
+#text{
+    text-align: center;
+    margin-top: -5%;
+    background-color:   rgb(39, 39, 39); ;
+    border-radius: 25%;
+ 
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #BCBCBC;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 3em;
+}
+#sq{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5% 0;
+    
+    
+
+}
+.all-sq{
+    
+    
+    flex-basis: 30%;
+    border:solid 5px #BCBCBC   ;
+    flex-shrink: 1;
+    border-radius: 25px;
+    justify-content: center;
+    background-color: #F0DD9B;
+    min-height: 20vh;
+    
+}
+.all-sq_text{
+    font-size: 15px;
+    min-height: 17.5vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: rgb(39,39,39);
+    border-top-right-radius:20px;
+    border-top-left-radius:20px;
+    padding: 2% 4% 0% 4%;
+
+    
+}
+.all-sq_text h1{
+    
+    vertical-align:baseline;
+}
+.buy_div{
+    text-align: center;
+    width: 100%;
+    border-top:solid 5px #BCBCBC   ; 
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 6% 4%;
+    
+}
+.buy{
+    border-radius:20px ;
+    transition: all 0.2s;
+    font-family: 'Playfair Display', serif;
+    font-style:italic;
+    font-weight: 500;
+    color: rgb(0, 0, 0); /* цвет текста */
+    background-color:  #e8e8e8; /* цвет заднего фона */
+    text-decoration: none;
+    padding: 2% 5%; /* отступы до содержимого блока */
+    border: solid 2px rgb(39, 39, 39);
+   
+    cursor: pointer; /* форма курсора */
+    font-size: 20px;
+    font-weight: 500;
+    
+    text-align: center; /*выравнивание содержимого элемента по центру */
+
+}
+.educ_intro{
+    text-align: center;
+    margin-bottom: -7%;
+    background-color:   rgb(39, 39, 39); 
+    border-radius: 25%;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #BCBCBC;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 3em;
+  
+    
+}
+.educ_part{
+    float:left;
+    width: 100%;
+    margin-top: 5%;
+    padding:0;
+}
+.educ_sq{
+    margin:0;
+    padding:0;
+}
+
+header .container{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    align-items: center;
+    -ms-align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+ 
+    
+}
+header .logo{
+    max-width: 200px;
+    display: block;
+    margin-left: 2%;
+
+}
+.mnu-tp{
+    list-style-type: none;
+}
+.mnu-tp li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.mnu-tp li a{
+    transition: all .4s;
+    display: block;
+    text-decoration: none;
+    color: #222;
+    
+  
+}
+.mnu-tp li a:hover{
+   color:rgb(255, 24, 24);
+}
+
+
+
+
+
+
+
+
+
+body{
+    /*background: url('../img/bg-2.jpg') 50% 0/cover no-repeat fixed;*/
+    background-color: #BCBCBC;
+ 
+
+    
+    
+   
+
+}
+@media (max-width:767px){
+    #mntext{
+        font-size: calc(5px + (30 + 30 * 0.7) * ((100vw - 320px) / 1280)) ;
+    }
+    #sctext{
+        font-size:calc(10px + (50 + 50 * 0.7) * ((100vw - 320px) / 1280));
+
+    }
+
+
+}
